@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap");
+:root {
+    --dark-cyan: #3c8067;
+    --cream: #f2ebe3;
+    --very-dark-blue: #1c232b;
+    --dark-grayish-blue: #6c7289;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+
+#card {
+    background-color: var(--white);
+    width: 36rem;
+    height: 28rem;
+    border-radius: 0.5rem;
+}
+#image-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#content {
+    float: right;
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+#content > h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1.2rem;
+    font-weight: 100;
+}
+/* font-family: 'Fraunces */
+
+#content > h1 {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+    margin-bottom: 1.4rem;
+    letter-spacing: -1px;
+}
+#product-description {
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+}
+#numbers {
+    display: flex;
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+#current-price {
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    margin-right: 1rem;
+}
+
+#old-price {
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+button {
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#content > button {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    height: 2.8rem;
+    width: 100%;
+    border: 0; // supprimer la bordure de couleur
+}
+#content > button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+
+#content > button > img {
+    margin-right: 0.6rem;
+}
