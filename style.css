@@ -22,13 +22,13 @@ body {
     background-color: var(--cream);
 }
 
-#card {
+.card {
     background-color: var(--white);
     width: 36rem;
     height: 28rem;
     border-radius: 0.5rem;
 }
-#image-container {
+.image-container {
     float: left;
     width: 50%;
     height: 100%;
@@ -37,7 +37,7 @@ body {
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
-#content {
+.content {
     float: right;
     height: 100%;
     width: 50%;
@@ -45,39 +45,40 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-#content > h2 {
+.content > h2 {
     font-size: 0.75rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     color: var(--dark-grayish-blue);
     margin-bottom: 1.2rem;
     font-weight: 100;
 }
 /* font-family: 'Fraunces */
 
-#content > h1 {
+.content > h1 {
     font-family: "Fraunces", serif;
     font-size: 2rem;
     font-weight: 800;
     color: var(--very-dark-blue);
     margin-bottom: 1.4rem;
     letter-spacing: -1px;
+    line-height: 35px;
 }
-#product-description {
+.product-description {
     color: var(--dark-grayish-blue);
     font-family: "Montserrat", sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.4rem;
     margin-bottom: 1.2rem;
 }
-#numbers {
+.numbers {
     display: flex;
     height: 3rem;
     margin-bottom: 1.2rem;
     justify-content: flex-start;
     align-items: center;
 }
-#current-price {
+.current-price {
     color: var(--dark-cyan);
     font-size: 2rem;
     font-family: "Fraunces", serif;
@@ -85,7 +86,7 @@ body {
     margin-right: 1rem;
 }
 
-#old-price {
+.old-price {
     font-size: 0.8rem;
     font-family: "Montserrat", sans-serif;
     color: var(--dark-grayish-blue);
@@ -102,18 +103,18 @@ button {
     transition: background-color 0.4s ease;
 }
 
-#content > button {
+.content > button {
     font-family: "Montserrat", sans-serif;
     background-color: var(--dark-cyan);
     color: var(--white);
-    height: 2.8rem;
+    height: 3rem;
     width: 100%;
     border: 0; // supprimer la bordure de couleur
 }
-#content > button:hover {
+.content > button:hover {
     background-color: hsl(156, 42%, 18%);
 }
 
-#content > button > img {
+.content > button > img {
     margin-right: 0.6rem;
 }
